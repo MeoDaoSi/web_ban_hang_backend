@@ -1,4 +1,4 @@
-const mongoose = requrie('mongoose');
+const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 const userSchema = new Schema({
@@ -27,6 +27,8 @@ const userSchema = new Schema({
         require: true
     }
 })
+
+// userSchema.method
 
 const User = mongoose.model('users', userSchema);
 

@@ -33,8 +33,13 @@ const logout = async (req, res) => {
     }
 }
 
+const getMe = async (req, res) => {
+    res.status(200).json(req.user)
+}
+
 module.exports = {
     register,
     logout,
-    login
+    login,
+    getMe
 }
